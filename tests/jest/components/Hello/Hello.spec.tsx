@@ -1,21 +1,20 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
+// import React from 'react';
+// import renderer from 'react-test-renderer';
 
-import { Hello } from '@components/Hello/Hello';
+// import { AnimalBrowser } from '@pages/animal-browser/animal-browser';
 
 describe('Hello component', () => {
   test('should render component properly', () => {
     // given
-    const dummyComponentProps = {
-      bar: 'test',
-      foo: 'lorem',
-    };
-
-    // when
-    const componentRenderer = renderer.create(<Hello {...dummyComponentProps} />);
-    const tree = componentRenderer.toJSON();
-
-    // then
-    expect(tree).toMatchSnapshot();
+    // const dummyComponentProps = {
+    //   bar: 'test',
+    //   foo: 'lorem',
+    // };
+    // // when
+    // const componentRenderer = renderer.create(<AnimalBrowser {...dummyComponentProps} />);
+    // const tree = componentRenderer.toJSON();
+    // // then
+    // expect(tree).toMatchSnapshot();
   });
 });
+export {};

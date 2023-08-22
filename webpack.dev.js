@@ -1,3 +1,4 @@
+/* eslint-disable */
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -8,7 +9,7 @@ module.exports = {
     main: './src/index.tsx',
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.scss'],
+    extensions: ['.ts', '.tsx', '.js', '.scss', '.css'],
     alias: {
       '@components': path.resolve(__dirname, 'src/components'),
       '@routes': path.resolve(__dirname, 'src/routes'),
@@ -22,13 +23,21 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
+        use: [
+          {
+            loader: 'ts-loader',
+            options: {
+              compilerOptions: { noEmit: false },
+            },
+          },
+        ],
         exclude: /node_modules/,
-        loader: 'ts-loader',
       },
       {
         test: /\.s(a|c)ss$/,
         use: [
           'style-loader',
+          'postcss-loader',
           {
             loader: 'css-loader',
             options: {
@@ -45,6 +54,11 @@ module.exports = {
             },
           },
         ],
+      },
+      {
+        test: /\.css$/i,
+        include: path.resolve(__dirname, 'src'),
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
       {
         test: /\.(ttf|woff|woff2)$/,
