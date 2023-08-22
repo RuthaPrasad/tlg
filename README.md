@@ -1,77 +1,26 @@
-# React | Typescript | Jest | Cypress - application boilerplate
+# TLG - Coding Challenge
 
-It's a template for React application with Typescript, Jest library and other stuff that can be helpful for you - feel free to use it!
+A customer is creating a website where people who would like to see wildlife (eg lions etc) can create a list of their favourite animals.
+For each animal in the system, the user would be able to rate an animal and select which attributes of the animal they like or dislike.
+To get a list of attributes for different animals, you could use a website like [Animals API - API Ninjas [https://api-ninjas.com/api/animals]   
+You should not write a backend for storage, but you might choose to store data in the browser cache.
 
-- [React | Typescript | Jest - application boilerplate](#react--typescript--jest---application-boilerplate)
-  - [Instalation steps](#instalation-steps)
-  - [Available scripts](#available-scripts)
-  - [Technology stack](#technology-stack)
-  - [Useful information](#useful-information)
+## Deliverables 
 
-<a name="instalation" />
+### 1. Code
 
-### Instalation steps
+`npm install` - to install required packages and dependencies needed for the codebase
+`npm start` - to launch website on the browser
+`npm run test:jest` - to run Jest tests
 
-1. Clone this repository to destination folder.
+### 2. Actual time taken from start to finish
+3 hrs 30 mins 
+- 15 mins - Designing what the website should look like and work like (general UI/UX flow)
+- 45 mins - Setting up the codebase (file structuring + installing packages)
+- 2 hrs - Actual implementation (UI components, API integration, tests, debugging errors, css etc)
+- 30 mins - Writing up this ReadMe 
 
-`git clone https://github.com/rkoziol/react-typescript-jest-boilerplate.git`
-
-2. Install dependencies.
-
-`npm install`
-
-3. Run local environment.
-
-`npm start`
-
-<a name="scripts" />
-
-### Available scripts
-
-`npm start` - run development server with hot reload mode,
-
-`npm build` - build distributon package,
-
-`npm run lint` - run lints,
-
-`npm run lint:code` - run lint for typescript / javascript files,
-
-`npm run lint:code:fix` - run lint for typescript / javascript files with auto fix option,
-
-`npm run lint:style` - run lint for style files,
-
-`npm run lint:style:fix` - run lint for style files with auto fix option,
-
-`npm run test:jest` - run Jest tests,
-
-`npm run test:jest:watch` - run Jest tests with watch mode,
-
-`npm run test:jest:coverage` - run Jest tests and generate coverage report,
-
-`npm run test:cypress` - run Cypress tests in terminal,
-
-`npm run test:cypress:open` - open Cypress application.
-
-<a name="technology" />
-
-### Technology stack
-
-|                                                                                                                                                                                                                           | Name             | Version | Docs                                                |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ------- | --------------------------------------------------- |
-| <img src="https://cdn.worldvectorlogo.com/logos/typescript-2.svg" width='30'>                                                                                                                                             | Typescript       | 4.9.5   | <https://www.typescriptlang.org/>                   |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" width='30'>                                                                                                 | React            | 18.2.0  | <https://reactjs.org/>                              |
-| <img src="https://seeklogo.com/images/R/react-router-logo-AB5BFB638F-seeklogo.com.png" width='30'>                                                                                                                        | React Router Dom | 6.8.0   | <https://v5.reactrouter.com/web/guides/quick-start> |
-| <img src="https://iconape.com/wp-content/png_logo_vector/jest-logo.png" width='30'>                                                                                                                                       | Jest             | 29.4.1  | <https://jestjs.io/>                                |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Cypress.png" width='30'>                                                                                                                                    | Cypress          | 12.5.0  | <https://www.cypress.io/>                           |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png" width='30'>                                                                                       | Sass             | 1.58.0  | <https://sass-lang.com/>                            |
-| <img src="https://raw.githubusercontent.com/webpack/media/master/logo/icon-square-big.png" width='30'>                                                                                                                    | Webpack          | 5.75.0  | <https://webpack.js.org/>                           |
-| <img src="https://cdn.worldvectorlogo.com/logos/eslint.svg" width='30'>                                                                                                                                                   | ESLint           | 8.33.0  | <https://eslint.org/>                               |
-| <img src="https://prettier.io/icon.png" width='30'>                                                                                                                                                                       | Prettier         | 2.8.3   | https://prettier.io/                                |
-| <img src="https://media.istockphoto.com/vectors/cute-brown-siberian-husky-dog-sitting-cartoon-icon-vector-vector-id1238710824?k=20&m=1238710824&s=170667a&w=0&h=m4N_3us1MDDnMa-mWIGxyrYvgd9FRq0A67ziTCy7ZZw=" width='30'> | Husky            | 8.0.3   | <https://github.com/typicode/husky>                 |
-
-<a name="information" />
-
-### Useful information
+### 3. A brief description of your thought process during development, including limitations, known bugs, wishlist
 
 I focused on separate logic from presentation layer of component, so components are created according to this scheme:
 
@@ -80,5 +29,4 @@ I focused on separate logic from presentation layer of component, so components 
 - **Component.scss** - file with component style declaration.
 - **handlers.ts** - file where You can place useful function for component.
 
-Before You commit or push something on repository, Husky will run code lints and tests.
-The configuration files are in the main project folder.
+### 4. Outputs
