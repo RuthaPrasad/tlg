@@ -50,20 +50,24 @@ You should not write a backend for storage, but you might choose to store data i
 A. **UI Output**
 - Main sections
   - Filters - select between different types of animals to discover animals you didn't know before
-    ![image](https://github.com/RuthaPrasad/tlg/assets/23292569/57f50b17-ec84-42b3-8175-deb187e36e8c)
+    ![image](https://github.com/RuthaPrasad/tlg/assets/23292569/25d09f51-4790-42ab-b683-2d97aa53c51d)
+
 
   - Animals Browser - browse through different names and picture, quick-like option included
-    ![image](https://github.com/RuthaPrasad/tlg/assets/23292569/30b65591-2cbb-4747-94e0-81606cf48cdc)
+    ![image](https://github.com/RuthaPrasad/tlg/assets/23292569/9037ff5c-1a1f-482a-9e76-d7ce474dc53c)
+
     
   - Animal Info - more details about the animal you click on, user can like which characters they like about the animal
-    <img src="https://github.com/RuthaPrasad/tlg/assets/23292569/08474220-0cfa-44c0-8f4e-4f3887ad9aa8.png" width=50% height=50%>
+    <img src="https://github.com/RuthaPrasad/tlg/assets/23292569/35f732d9-8a9d-4bfc-9bb9-1cb3f14e62e2" width=50% height=50%>
+
 
 - Full template (quick view of all main sections to help quick browsing
-  ![image](https://github.com/RuthaPrasad/tlg/assets/23292569/2485c175-324d-4c60-8b04-43792f7a3644)
+  ![image](https://github.com/RuthaPrasad/tlg/assets/23292569/de7c6325-7a04-4093-b305-4f23f23bd5a4)
+
 
 B. **Test Output**
 - Jest unit tests for one UI component and one service
-  - <img src="https://github.com/RuthaPrasad/tlg/assets/23292569/e9ce61c8-a175-471a-87a7-2d6935a6003f.png" width=50% height=50%>
+  - <img src="https://github.com/RuthaPrasad/tlg/assets/23292569/1e11d9c1-9c0d-4ea0-ab09-3c76dbfc90f1.png" width=50% height=50%>
 
 
 
