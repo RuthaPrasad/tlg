@@ -41,7 +41,7 @@ export const Animal = ({ animal }: IAnimalProps) => {
           key={animal.id}
           name={animal.name}
           scientificName={animal.characteristics.slogan}
-          imageUrl={'https://cdn.vox-cdn.com/uploads/chorus_image/image/47805395/wildlife-animals-in-norway-5.0.0.jpg'}
+          imageUrl={'https://a-z-animals.com/media/animals/images/original/reindeer4.jpg'}
           callback={() => console.log('')}
         />
         <AnimalMetrics metrics={animal} callback={updateUserPreference} userPreferences={getUserPreference()} />

@@ -11,6 +11,7 @@ export const Filters = ({}: IFilterProps) => {
       <div className="-my-6 divide-y divide-gray-500/10">
         <div className="space-y-2 py-6">
           <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+            {/* TODO: move group to @molucules/navigation/filter */}
             <LinkButton url="/" title="Reptiles" />
             <LinkButton url="/" title="Birds" />
             <LinkButton url="/" title="Mammals" />

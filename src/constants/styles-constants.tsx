@@ -1,11 +1,7 @@
+//TODO: unused
 export enum ICON_TYPE {
-  Insert = 'plus',
-  Update = 'pencil-outline',
+  Heart = 'heart',
   Search = 'magnify',
-  Menu = 'menu-down',
-  Date = 'calendar',
-  Dot = 'circle',
-  Dismiss = 'close',
 }
 
 export const BACKGROUND_COLOR = {
@@ -14,51 +10,11 @@ export const BACKGROUND_COLOR = {
   lightgrey: '#DBDBDB',
 };
 
-/* === GENERAL STYLE CONSTANTS === */
-
-export enum NOTIFICATION_TYPES {
-  NoOp = 'NoOp',
-  Undo = 'Undo',
-  Withdraw = 'Withdraw',
-  Retry = 'Retry',
-  Close = 'Close',
-}
-
-export enum TAG_TYPES {
-  Filled = 'flat',
-  Outlined = 'outlined',
-}
-
 export enum BUTTON_TYPES {
   Primary = 'primary',
   Secondary = 'secondary',
   Disabled = 'disabled',
 }
-
-// /* === DANK STYLE CHOICES === */
-// export const SCREEN_RESPONSIVE_WIDTH = {
-//   twoPercent: WIDTH * 0.02,
-//   threePercent: WIDTH * 0.03,
-//   quarterPercent: WIDTH * 0.25,
-//   thirtyPercent: WIDTH * 0.3,
-//   fortyPercent: WIDTH * 0.4,
-//   fiftyPercent: WIDTH * 0.5,
-//   sixtyPercent: WIDTH * 0.6,
-//   seventyPercent: WIDTH * 0.7,
-//   seventyFivePercent: WIDTH * 0.75,
-//   ninetyNinePercent: WIDTH * 0.99,
-//   hundredPercent: WIDTH,
-// };
-
-// export const SCREEN_RESPONSIVE_HEIGHT = {
-//   onePercent: HEIGHT * 0.01,
-//   twoPercent: HEIGHT * 0.02,
-//   threePercent: HEIGHT * 0.03,
-//   twoPointFivePercent: HEIGHT / 40,
-//   twoPointTwoPercent: HEIGHT / 45,
-//   quarterPercent: HEIGHT * 0.25,
-//   hundredPercent: HEIGHT,
-// };
 
 export const ALIGN = {
   absolute: 'absolute',
@@ -103,28 +59,6 @@ export const BUTTON_COLOR = {
   primary: COLOR.blue,
   secondary: COLOR.hawkesBlue,
   disabled: COLOR.gray9,
-};
-
-export const BUTTON_BORDER = {
-  align: {
-    alignItems: ALIGN.center,
-  },
-  color: {
-    borderColor: COLOR.gray86,
-  },
-  padding: {
-    paddingTop: 16,
-    paddingBottom: 16,
-  },
-  round: {
-    borderRadius: 99,
-  },
-  top: {
-    borderTopWidth: 1,
-  },
-  box: {
-    borderWidth: 1,
-  },
 };
 
 export const IMG_SIZE = {
@@ -191,51 +125,3 @@ export const FONT_COLOR = {
 export const FONT_FAMILY = {
   regular: 'Roboto',
 } as const;
-
-export const FONT_TYPE = {
-  paragraph: {
-    fontFamily: FONT_FAMILY.regular,
-    fontSize: FONT_SIZE.paragraph,
-    fontWeight: FONT_WEIGHT.bold,
-  },
-  subtitle: {
-    fontFamily: FONT_FAMILY.regular,
-    fontSize: FONT_SIZE.small,
-    fontWeight: FONT_WEIGHT.normal,
-    color: FONT_COLOR.subtitle,
-  },
-  subheader: {
-    fontFamily: FONT_FAMILY.regular,
-    fontSize: FONT_SIZE.caption,
-    fontWeight: FONT_WEIGHT.bold,
-    color: FONT_COLOR.subheader,
-  },
-  subheading: {
-    fontFamily: FONT_FAMILY.regular,
-    fontSize: FONT_SIZE.subheader,
-    fontWeight: FONT_WEIGHT.bold,
-    color: FONT_COLOR.subheader,
-  },
-  header: {
-    fontFamily: FONT_FAMILY.regular,
-    fontSize: FONT_SIZE.caption,
-    fontWeight: FONT_WEIGHT.dark,
-    color: FONT_COLOR.subheader,
-  },
-  caption: {
-    fontFamily: FONT_FAMILY.regular,
-    fontSize: FONT_SIZE.caption,
-    fontWeight: FONT_WEIGHT.bold,
-    color: FONT_COLOR.subheader,
-  },
-};
-
-export const SHADOW = {
-  box: {
-    shadowOffset: { width: -2, height: 4 },
-    shadowColor: COLOR.black,
-    shadowOpacity: 0.2,
-    shadowRadius: 4,
-    elevation: 4,
-  },
-};

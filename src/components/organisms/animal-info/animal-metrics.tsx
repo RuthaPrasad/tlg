@@ -12,7 +12,6 @@ interface IAnimalMetricsProps {
 //TODO: make generic with props & map
 export const AnimalMetrics = ({ metrics, callback, userPreferences }: IAnimalMetricsProps) => {
   const isLiked = (metric: string) => {
-    console.log(userPreferences, metric, userPreferences.includes(metric));
     return userPreferences.includes(metric);
   };
 
@@ -20,7 +19,7 @@ export const AnimalMetrics = ({ metrics, callback, userPreferences }: IAnimalMet
     <div className="bg-white py-16">
       <div className="mx-auto max-w-7xl">
         <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-2">
-          {/* TODO: make into molecule */}
+          {/* TODO: move to @molecules/text/metrics/numerical */}
           <div
             key={metrics.characteristics.estimated_population_size}
             className="mx-auto flex max-w-xs flex-col gap-y-4"

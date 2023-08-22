@@ -7,7 +7,7 @@ import { Filters } from '../components/organisms/filters/filters';
 export const App = (): JSX.Element => (
   <div>
     <BrowserRouter>
-      <Filters todo={'todo'} />
+      <Filters todo={'//TODO'} />
       <Routes>
         <Route path="/" element={<AnimalBrowserPage />} />
       </Routes>
